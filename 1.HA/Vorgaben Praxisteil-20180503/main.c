@@ -14,17 +14,17 @@ int main()
 
 	stack_push(stack, s_elem_new("Null"));
 	stack_push(stack, s_elem_new("Eins"));
-	stack_peek(stack);
-	stack_push(stack,s_elem_new("Zwei"));
-	stack_pop(stack, &tempName);
-	stack_peek(stack);
+	//stack_peek(stack);
+	//stack_push(stack,s_elem_new("Zwei"));
+	//stack_pop(stack, &tempName);
+	//stack_peek(stack);
 	stack_push(stack, s_elem_new("Zwei"));
 	stack_push(stack, s_elem_new("Drei"));
 	stack_push(stack, s_elem_new("Vier"));
-	stack_peek(stack);
+	//stack_peek(stack);
 	stack_push(stack, s_elem_new("Fünf"));
-
 	stack_print(stack);
+
 /* should print:
   (0,Null)
   (1,Eins)
@@ -37,6 +37,5 @@ int main()
 	stack_free(stack);
 	// use: valgrind ./stack
 	// to check if your free function works correctly
-
 	return 0;
 }
